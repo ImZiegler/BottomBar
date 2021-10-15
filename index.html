@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>Bottom bar</title>
+</head>
+
+<body>
+<audio id="sound">
+<source src="./assets/sound/Button_Click.wav" type="audio/mp3">
+</audio>
+
+<div class="bottom-bar">
+<img src="./assets/img/4-layers.png" alt="">
+<div onclick="document.getElementById('sound').play()" class="info-button">
+<div class="info-button__button">
+<div class="info-button__sign"></div>
+</div>
+</div>
+
+
+
+<div class="totalbet">
+<div class="totalbet__conteiner">
+<div onclick="document.getElementById('sound').play()" class=" minus-button">
+<div class="minus-button_button"></div>
+</div>
+<div class="totalbet__info"></div>
+<div onclick="document.getElementById('sound').play()" class="plus-button">
+<div class="plus-button_button"></div>
+</div>
+<div class="currency"></div>
+</div>
+</div>
+
+<div class="coinbox">
+<div class="coinbox_conteiner"></div>
+<div class="currency_coin"></div>
+</div>
+
+<div class="good_luck">
+<div class="good_luck_lable"></div>
+</div>
+<div class="turbo_box">
+<input type="checkbox" id="check-menu">
+<div class="turbo_box_gr">
+<label for="check-menu" onclick="document.getElementById('sound').play()" class="turbo_button">
+<div class="turbo_button_button"></div>
+</label>
+</div>
+</div>
+
+<div id="sss" class="spinselector_box">
+<span class="spinselector_box__text"></span>
+</div>
+<div id="showSpinSelector" onclick="document.getElementById('sound').play()" class="auto_box">
+
+<div class="auto_box_button">
+</div>
+</div>
+
+
+<div onclick="document.getElementById('sound').play()" class="spin_button">
+<div class="spin_button_button"></div>
+</div>
+
+</div>
+<script>
+const spinBlock = document.getElementsByClassName('auto_box_button');
+
+
+showSpinSelector.onmouseover = function () {
+sss.classList.add('show');
+};
+sss.onmouseover = function () {
+sss.classList.add('show');
+};
+sss.onmouseout = function () {
+sss.classList.remove('show');
+};
+</script>
+</body>
+
+</html>
